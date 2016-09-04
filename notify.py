@@ -1,5 +1,12 @@
+import gi
+
+# GTK version
+gi.require_version('Notify', '0.7')
+
+
 from gi.repository import Notify
 import os
+
 
 #  initialization of libnotify
 Notify.init("DOOMSDAY TRASH")
@@ -21,7 +28,7 @@ def repl():
 	"in 20 minutes, all your trash is going to be erased forever.",
 	"/home/tommaso/Pictures/alert.png"
 	).show()
-	
+
 	return
 
 #add reply button
