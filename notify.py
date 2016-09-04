@@ -29,7 +29,7 @@ def repl():
 notification.add_action(
 	"action_click",
 	"WAIT!",
-	repl(),
+	repl,
 	None #  Arguments
 )
 
